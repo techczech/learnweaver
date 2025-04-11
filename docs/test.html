@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Macroeconomics: Theory and Policy in a Closed Economy</title>
+    <script type="text/javascript" async
+      src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
+    </script>
+    <script type="text/x-mathjax-config">
+      // MathJax configuration to recognize LaTeX delimiters
+      MathJax.Hub.Config({
+        tex2jax: {
+          inlineMath: [['$','$'], ['\\(','\\)']], // Delimiters for inline math
+          displayMath: [['$$','$$'], ['\\[','\\]']], // Delimiters for display math
+          processEscapes: true,
+          processEnvironments: true,
+          skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'], // Tags to ignore
+          TeX: { equationNumbers: { autoNumber: "AMS" }, // Automatic equation numbering
+                 extensions: ["AMSmath.js", "AMSsymbols.js"] }
+        }
+      });
+    </script>
+    <style>
+        /* Basic styling for readability and accessibility */
+        body {
+            font-family: sans-serif; /* Common, readable font */
+            line-height: 1.6; /* Improved line spacing */
+            margin: 2em; /* Add some space around the content */
+            background-color: #fff; /* White background */
+            color: #333; /* Dark grey text for good contrast */
+        }
+        h1, h2, h3 {
+            color: #1a5f7a; /* Darker blue for headings */
+            margin-top: 1.5em;
+            margin-bottom: 0.5em;
+            line-height: 1.3;
+        }
+        h1 {
+            font-size: 2.2em;
+            border-bottom: 2px solid #1a5f7a; /* Underline main title */
+            padding-bottom: 0.3em;
+        }
+        h2 {
+            font-size: 1.8em;
+            border-bottom: 1px solid #ccc; /* Lighter underline for sections */
+            padding-bottom: 0.2em;
+        }
+        h3 {
+            font-size: 1.4em;
+        }
+        p {
+            margin-bottom: 1em; /* Space after paragraphs */
+        }
+        ul, ol {
+            margin-bottom: 1em;
+            padding-left: 1.5em; /* Indent lists */
+        }
+        li {
+            margin-bottom: 0.5em; /* Space between list items */
+        }
+        figure {
+            margin: 1.5em 0; /* Space around figures */
+            padding: 1em; /* Padding inside figure box */
+            border: 1px solid #eee; /* Light border for figures */
+            background-color: #f9f9f9; /* Slightly off-white background for figures */
+            text-align: center; /* Center images within figure */
+        }
+        figure img {
+            max-width: 100%; /* Ensure images are responsive */
+            height: auto; /* Maintain aspect ratio */
+            display: block; /* Ensure img is block for centering */
+            margin-left: auto;
+            margin-right: auto;
+        }
+        figcaption {
+            margin-top: 0.5em; /* Space above caption */
+            font-style: italic; /* Italicize captions */
+            font-size: 0.9em; /* Slightly smaller font for captions */
+            color: #555; /* Grey color for captions */
+        }
+        /* Basic table styling - included for completeness if tables were present */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 1em;
+        }
+        th, td {
+            border: 1px solid #ccc;
+            padding: 0.5em;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2; /* Light grey background for table headers */
+        }
+        /* Ensure good contrast - WCAG AA compliant */
+        body { background-color: #ffffff; color: #000000; } /* Black text on white */
+        a { color: #0000ee; } /* Standard link blue */
+        a:visited { color: #551a8b; } /* Standard visited link purple */
+    </style>
+</head>
+<body>
+
+    <h1>Macroeconomics: Theory and Policy in a Closed Economy</h1>
+    <p>Dr Chris Bowdler</p>
+
+    <h2>Macroeconomics this term</h2>
+    <ul>
+        <li>Weeks $1-3\longrightarrow analysis$ of labour markets, output and inflation, monetary policy, in closed economy</li>
+        <li>extends closed economy short-run analysis from prelims lectures</li>
+        <li>Week 4: extension to open economy with trade and financial flows</li>
+        <li>Week 5: models of economic growth over the very long-run</li>
+        <li>Week 6: inter-temporal models of economic fluctuations</li>
+        <li>Week 7: fiscal policy and debt management</li>
+    </ul>
+
+    <h2>Overview of lectures in weeks 1-3</h2>
+    <ul>
+        <li>Lectures 1-4 cover three equation IS - PC - MR model presented in Carlin and Soskice (CS) textbook</li>
+        <li>extends ISMP and ASAD from prelims with imperfect competition on supply-side and hypotheses on monetary policy objectives</li>
+        <li>address optimal policy response to macro shocks, problems of time inconsistency/inflation bias and related issues</li>
+        <li>Lectures 5 and 6 introduce sticky prices</li>
+        <li>micro foundation for sticky prices</li>
+        <li>aggregate implications (New Keynesian Phillips Curve)</li>
+        <li>implications of NKPC for inflation dynamics and optimal policy</li>
+    </ul>
+
+    <h2>Overview of lectures (continued)</h2>
+    <ul>
+        <li>Lectures 7 and 8:</li>
+        <li>macroeconomics at the zero lower bound for interest rates</li>
+        <li>problems of instability at the lower bound</li>
+        <li>what can monetary policy achieve in this case?</li>
+        <li>what is the role of quantitative easing and forward guidance for interest rates?</li>
+        <li>do we need a new monetary policy framework to address challenges posed during deep recessions?</li>
+    </ul>
+
+    <h2>Today's lecture</h2>
+    <ul>
+        <li>Recap of labour markets and aggregate supply under perfect competition</li>
+        <li>Labour markets under imperfect competition</li>
+        <li>voluntary and involuntary unemployment</li>
+        <li>determinants of labour market equilibrium</li>
+        <li>Relationship to aggregate supply short-run and long-run Phillips curves (one third of $IS-PC-MR$ model)</li>
+    </ul>
+
+    <h2>Equilibrium output under perfect competition</h2>
+    <ul>
+        <li>$Y=f(A,K,E)$, Y output, A technology, K capital, E labour</li>
+        <li>A, K fixed over time horizon considered (less easy to vary than labour input)</li>
+        <li>Perfect competition = marginal product of labour (MPL) defines labour demand $(E^{D})$</li>
+        <li>labour supply $(E^{S})$ positively sloped (real wage is opp cost of leisure as real wage rises agents switch leisure to labour)</li>
+        <li>Real wage is nominal wage (W) relative to consumer prices (P) and adjusts to clear labour market (panel A)</li>
+        <li>Employment is then determined and feeds into production function to set output (panel B)</li>
+        <li>So equilibrium output is unique and therefore invariant to consumer price level giving vertical aggregate suppy curve (panel D)</li>
+    </ul>
+
+    <figure>
+        <img src="https://storage.googleapis.com/generativeai-downloads/images/d357b709635ac087f4110e7962b25c85" alt="Figure 1 shows four related graphs depicting equilibrium output under perfect competition: (A) Labour market equilibrium with upward sloping supply (ES) and downward sloping demand (ED=MPL) determining equilibrium employment ECE. (B) Production function showing output (Y) increasing with employment (E). (C) 45-degree line relating output Y to itself. (D) Vertical Long-Run Aggregate Supply (LRAS) curve at the equilibrium output level Ye, indicating output is independent of the price level P in the long run under perfect competition.">
+        <figcaption>Figure 1</figcaption>
+    </figure>
+
+    <h2>Labour supply under imperfect competition</h2>
+    <ul>
+        <li>Trade unions have degree of monopoly power and use this to target real wages above $E^{S}$ schedule</li>
+        <li>so there is a wage-setting (WS) curve above labour supply curve</li>
+        <li>size of real wage premium reflects bargaining power of unions, e.g. closed shop industries of 1960s and 1970s (membership of given union required for employment in particular industry) conferred significant monopoly power on unions and widened $WS-E^{S}$ gap, whilst reforms in 1980s limited union power (WS coincides with $E^{S}$ in limiting case of perf comp)</li>
+        <li>Whether WS is parallel to $E^{S}$ is empirical matter</li>
+        <li>could argue union power rises with employment (fewer unemployed to replace existing workers) so WS diverges from $E^{S}$</li>
+    </ul>
+
+    <figure>
+        <img src="https://storage.googleapis.com/generativeai-downloads/images/f84b51653a6751131a0a7c6ed3349562" alt="Figure 2 shows the relationship between the Wage-Setting (WS) curve and the Labour Supply (ES) curve in a graph with the real wage (W/P) on the vertical axis and employment (E) on the horizontal axis. Both curves slope upwards. The WS curve is positioned above the ES curve, indicating that unions set wages above the competitive supply level. The vertical distance between WS and ES represents the real wage premium achieved by unions.">
+        <figcaption>Figure 2</figcaption>
+    </figure>
+
+    <h2>What shifts the WS curve?</h2>
+    <ul>
+        <li>Bargaining power (& hence ability to extract wage premium) depend on:</li>
+        <ul> <li>legal framework, e.g. liberal industrial relations laws make strike action credible/effective (consider secondary picketing in 1970s), as do restrictions on firing workers</li>
+            <li>regional/occupational dispersion of employment - premium a union can extract constrained by risk firms will replace union labour with non-union labour, but risk diminished if unemployed labour concentrated in one region/industry so there are limits to labour mobility</li>
+            <li>such effects often cited as factor behind persistent rise in UK unemployment in early 1980s</li>
+        </ul>
+        <li>Aspirations of trade unions depend on:</li>
+        <ul> <li>labour productivity (unions may seek to share in the gains from rising output per worker)</li>
+            <li>wage accords (unions may agree to limit wage premium in return for public investment in their industry, improved working conditions etc.)</li>
+        </ul>
+    </ul>
+
+    <h2>Labour supply shifts and WS</h2>
+    <ul>
+        <li>WS determined as markup on $E^{S}$ so in theory demographic factors affecting labour supply (net migration, retirement ages) as well as variations in labour force participation can shift WS</li>
+        <li>But $E^{S}$ shifts need not shift WS proportionately</li>
+        <li>rises in labour supply from immigration or parents returning to work only shift WS proportionately if new workers are effective substitutes for union labour (they need not be given their skills, experience etc.)</li>
+    </ul>
+
+    <h2>Labour demand under imperfect competition</h2>
+    <ul>
+        <li>Firms have some monopoly power in goods market and set prices above marginal cost to generate excess profits</li>
+        <li>but if this is so then factor inputs not receiving full value of their marginal product real wage offers below MPL by virtue of firms price-setting power (expression of monopsony power in labour market) so there is a price-setting (PS) curve defining real wage offered to workers that is below MPL (competitive labour demand)</li>
+        <li>the part of MPL not offered to workers (= wedge beween MPL and PS) is basis for excess profits achieved by firms</li>
+        <li>the greater the market power of firms the larger this wedge</li>
+    </ul>
+
+    <figure>
+        <img src="https://storage.googleapis.com/generativeai-downloads/images/1235d878f9e5f874f87c1870c4c8d375" alt="Figure 3 illustrates the Price-Setting (PS) curve in relation to the Marginal Product of Labour (MPL) curve, which represents competitive labour demand (ED). The graph plots the real wage (W/P) against employment (E). Both MPL and PS curves slope downwards. The PS curve lies below the MPL curve, indicating that firms with market power set real wages lower than the marginal product. The vertical gap between MPL and PS represents the share of MPL claimed by firms as profits or by other factors.">
+        <figcaption>Figure 3</figcaption>
+    </figure>
+
+    <h2>Labour demand under imperfect competition (continued)</h2>
+    <ul>
+        <li>Slope of PS is an empirical matter</li>
+        <li>typically think of MPL declining with labour input</li>
+        <li>since PS derived from MPL it typically inherits that negative slope</li>
+        <li>a special case is that in which the profit share of firms is counter-cyclical (falls with employment) to a degree that fully offsets declining MPL - then PS is horizontal (CS use this specical case in a great deal of their analysis to simplify exposition, results they obtain do not depend on it but be aware it is a special case)</li>
+    </ul>
+
+    <h2>What shifts the PS curve?</h2>
+    <ul>
+        <li>Degree of monopsony power exercised by firms</li>
+        <li>More generally, think of PS as an offer to workers formed as residual from MPL once claims of all other economic agents accounted for:</li>
+        <ul> <li>most obviously profit claims of firms</li>
+            <li>but if suppliers of other factors raise relative price for their factor then PS shifts left since less can be offered as real wages, e.g. in 1970s OPEC cartel increased real price of oil very dramatically and in response western real wages stagnated</li>
+            <li>additionally governments make a claim on MPL through payroll taxes such as employer national contributions (levy on firms proportional to wages) and so rises in payroll taxes shift PS left</li>
+        </ul>
+    </ul>
+
+    <h2>Labour demand shifts and PS</h2>
+    <ul>
+        <li>Labour demand under perf comp is MPL, which is set by technology and availability of other factor inputs</li>
+        <li>All else equal a rise in productivity will shift PS up</li>
+        <li>But extent of PS shift limited if firms use rise in productivity as opportunity to raise profit share</li>
+    </ul>
+
+    <h2>Equilibrium rate of unemployment</h2>
+    <ul>
+        <li>Labour market diagram on next slide compares equilbrium under perf comp $(E^{S}=E^{D})$ and imperf comp $(WS=PS)$</li>
+        <li>L represents population of working age (maximum possible labour supply - comp labour supply at any real wage is L minus workers not participating in workforce)</li>
+        <li>Under perf comp employment is $E_{CE}$ and all unemployment is voluntary in that all those seeking work at the prevailing real wage are employed</li>
+        <li>standard measures of unemployment such as the claimant count in UK are measures of involuntary unemployment (to claim unemp benefit must be available for and seeking work)</li>
+    </ul>
+
+    <figure>
+        <img src="https://storage.googleapis.com/generativeai-downloads/images/b475c6a8b94df2787911442cc1c63183" alt="Figure 4 compares labour market outcomes. It plots real wage (W/P) against employment (E), up to the total labour force (L). It shows the upward-sloping Labour Supply (ES) and Wage-Setting (WS) curves, and downward-sloping Labour Demand (ED=MPL) and Price-Setting (PS) curves. Perfect competition equilibrium (ECE) is where ES intersects ED=MPL. Imperfect competition equilibrium (EICE) is where WS intersects PS. The diagram highlights involuntary unemployment (difference between labour supply ES and employment EICE at the imperfect competition wage (W/p)ICE) and voluntary unemployment (difference between L and labour supply ES at the prevailing wage). Total unemployment under imperfect competition (L - EICE) is greater than under perfect competition (L - ECE).">
+        <figcaption>Figure 4</figcaption>
+    </figure>
+
+    <h2>Voluntary and involuntary unemployment</h2>
+    <ul>
+        <li>Equilibrium under imperf comp features both voluntary unemployment (distance from $E_{S}$ curve to L at equilib real wage $W/P_{ICE})$ and involuntary unemployment (distance from equilibrium employment $E_{ICE}$ to $E^{S}$ at equilib real wage)</li>
+        <li>existence of invol unemp requires imperf comp in labour supply (imperf competition in labour demand alone implies equilibrium where PS intersects $E^{S}$, giving only voluntary unemp)</li>
+        <li>but in general level of invol unemp depends on degree of imperf comp in goods market, e.g. if WS, $E^{S}$ diverge as employment rises then level of invol unemp negatively related to degree of imperf comp in goods market</li>
+        <li>exception occurs in special case in which WS, $E^{S}$ parallel</li>
+    </ul>
+
+    <h2>Real wages and welfare</h2>
+    <ul>
+        <li>Under imperf comp real wages could be either higher or lower compared to perf comp, depending on whether market power greater on demand-side (pointing to lower real wages) or supply-side (higher real wages)</li>
+        <li>But welfare definitely lower under imperf comp</li>
+        <li>at $E_{ICE}$ net marginal benefit of raising employment is positive because MPL exceeds opp cost of working</li>
+    </ul>
+
+    <h2>Labour markets and the Phillips curve</h2>
+    <ul>
+        <li>Just as comp lab mkt pins down equilibrium employment, output and position of LRAS, WS - PS intersection determines these under imperf comp</li>
+        <li>WS and PS determinants above will also affect productive capacity of economy $Y_{e}$ in Fig 5 and hence position of LRAS</li>
+        <li>Also shown is supply relationship in $(Y,\pi)$ space</li>
+        <li>also vertical through $Y_{e}$ given unique output associated with WS-PS equilibrium</li>
+        <li>↑ $\pi$ could ↓ real wages and stimulate employment but lab mkt then equilibrates and $Y_{e}$ restored despite change to $\pi$</li>
+        <li>so equilibrium (Y, π) relation vertical and labelled VPC (vertical Phillips curve)</li>
+        <li>Phillips originally linked inflation to unemployment, modern macro extends name to $(Y,\pi)$ relationship</li>
+    </ul>
+
+    <figure>
+        <img src="https://storage.googleapis.com/generativeai-downloads/images/802573e6b51f38e2d462e3f19ca851e5" alt="Figure 5 contains multiple panels linking the labour market under imperfect competition to the Long-Run Aggregate Supply (LRAS) and the Vertical Phillips Curve (VPC). Top-left: WS and PS curves intersect determining equilibrium employment EICE and real wage. Top-right: Production function Y=f(A,K,E) showing equilibrium output Ye corresponding to EICE. Bottom-left: 45-degree line relating output Y to itself. Bottom-right: LRAS curve shown as vertical at Ye in P-Y space. Bottom-right corner shows the VPC as vertical at Ye in π-Y space (inflation vs output).">
+        <figcaption>Figure 5</figcaption>
+    </figure>
+
+    <h2>Labour markets and the Phillips curve (continued)</h2>
+    <ul>
+        <li>CS use WS - PS framework to derive Phillips curves (denoted PC) applicable in short-run when lab mkt may or may not be in equilib</li>
+        <li>Assumptions:</li>
+        <ul> <li>unions act first and set nominal wage W to achieve target real wage on WS at prevailing employment</li>
+            <li>given W set before P, to achieve real wage target unions formulate price expectations which will be price level last period adjusted for expected inflation from last period to today (denoted $\pi_{t}^{e}$, t a time period), i.e. $p_{t}^{e}=p_{t-1}+\pi_{t}^{e}$ where $p=ln~P$</li>
+            <li>adaptive (backward-looking) expectations assumed for inflation, e.g. $\pi_{t}^{e}=\pi_{t-1}$</li>
+            <li>firms accept W set by unions, then set P to hit their real wage objective defined by PS at prevailing employment (so out of equilib mkt always on PS - firms have last mover advantage)</li>
+        </ul>
+    </ul>
+
+    <h2>What can we say about PC?</h2>
+    <ul>
+        <li>Suppose lab mkt initially in equilibrium in Fig 6 then in $(Y,\pi)$ space economy at point where PC intersects VPC (since short-run position is also equilib pt)</li>
+        <li>N.B. to simplify diagram Fig 6 assumes proportionality of employment and output (so no need to refer to production function of Fig 5) and denotes output $y=log~Y$ (as in CS book)</li>
+        <li>reason for latter is that $y_{t}-y_{e}$ measures percentage output gap</li>
+        <li>PC intersects VPC at the actual inf rate equal to prevailing expected inf (the PC labelled in Fig 6 has $\pi^{e}=\pi_{1}$ so PC must intersect VPC at $\pi_{1}$)</li>
+        <li>Why? if $PC=VPC$ then $WS=PS$ so equilib real wage achieved - to exactly hit equilib real wage TUs must have set W based on a $\pi^{e}$ that proved correct (if $\pi^{e}<\pi$ then W set would not be high enough to deliver equilib real wage and economy would be away from equilib E, Y and hence on PC but not VPC)</li>
+    </ul>
+
+    <figure>
+        <img src="https://storage.googleapis.com/generativeai-downloads/images/7d71e940608c9315d0187210b4b46b0c" alt="Figure 6 shows two panels. Top Panel: WS and PS curves intersecting at equilibrium employment Ee. Point A is on the WS curve at higher employment E1, representing the union's target real wage. Point B is on the PS curve at employment E1, representing the firm's price-setting real wage. The vertical distance from PS to WS at E1 is decomposed into theta (θ) and gamma (γ). Bottom Panel: Inflation (π) vs Output (Y=log Y). Shows the Vertical Phillips Curve (VPC) at equilibrium output Ye. An upward-sloping short-run Phillips Curve (PC) passes through the intersection of VPC and the initial expected inflation π1. Point B corresponds to the higher output Y1 and higher inflation π2 on this initial PC curve (labeled PC|πe=π1). Higher inflation levels π2 and π3 are also marked on the vertical axis.">
+        <figcaption>Figure 6. NB $Y=log~Y$ here and proportionality of employment and output assumed to simplify diagram through dropping of production function.</figcaption>
+    </figure>
+
+    <h2>PC out of equilibrium</h2>
+    <ul>
+        <li>Suppose external demand shock raises employment to $E_{1}$ and output to $y_{1}$</li>
+        <li>union target real wages rise by increment $\theta\Rightarrow W$ raised by $\pi_{1}$ (compensating expected inflation) plus $\theta$</li>
+        <li>if firms reacted by setting prices to maintain $\pi_{1}$ market would move to A (unions achieve real wage target), but at employment $E_{1}$ firms aim for B where real wage lower than equilibrium by increment $\gamma\Rightarrow$ set price inflation to $\pi_{2}=\pi_{1}+\theta+\gamma$</li>
+        <li>market moves to point B in both diagrams</li>
+    </ul>
+
+    <h2>Slope of the Phillips Curve</h2>
+    <ul>
+        <li>An insight from this analysis is that lab mkt adjustment implies positively sloped PC in lower part Fig 6</li>
+        <li>PC equation is $\pi_{t}=\pi_{t}^{e}+\alpha(y_{t}-y_{e})$</li>
+        <li>under adaptive exps this becomes $\pi_{t}=\pi_{t-1}+\alpha(y_{t}-y_{e})$</li>
+        <li>PC slope $\alpha$ set by WS, PS slopes (more positively sloped WS and more negatively sloped PS imply steeper PC)</li>
+        <li>these are determinants of PC slope when wages and prices flexible and can be set consistent with union/firm objectives</li>
+        <li>stickiness of wages and prices would leave market between points A and B and PC flatter</li>
+        <li>N.B. CS offer alternative rationalisation of PC in which workers set wages in light of $\pi_{t-1}$ not because it is expected inf rate, but because it is compensation for erosion of real wages by inflation last period - see details in CS, but final form of PC the same</li>
+    </ul>
+
+    <h2>Dynamics of the Phillips Curve</h2>
+    <ul>
+        <li>Next, adaptive exps traces out a set of Phillips curves</li>
+        <li>at B in lower part of Fig 6 infl has risen to $\pi_{2}$ so given $\pi_{t}^{e}=\pi_{t-1}$ expected inf next period must be $\pi_{2}$</li>
+        <li>PC then shifts to intersect VPC at $\pi_{2}$ next period (given PC must intersect VPC at exp inf)</li>
+        <li>this is the output-inflation tradeoff on which economy must operate next period</li>
+        <li>if employment persisted at $E_{1}$, PC would continue to shift up each period and inflation forever rising</li>
+        <li>employment and output below equilibrium would imply falling inflation and lower PC</li>
+        <li>only equilibrium employment implies stable inflation and therefore unemp rate associated with $E_{e}$ known as NAIRU (Non-Accelerating Inflation Rate of Unemployment)</li>
+    </ul>
+
+    <h2>Next lecture</h2>
+    <ul>
+        <li>VPC - PC structure defines supply-side of model developed by CS to analyse monetary policy</li>
+        <li>In next lecture add demand-side of model (IS curve from prelims) and tools/targets for monetary policy</li>
+        <li>Then investigate optimal policy response to various macro shocks</li>
+    </ul>
+
+</body>
+</html>
